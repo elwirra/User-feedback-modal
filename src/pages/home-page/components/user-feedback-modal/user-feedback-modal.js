@@ -4,12 +4,12 @@ export const UserFeedbackModal = () => {
     let userFeedbackModalClosedTimestamp = localStorage.getItem("userFeedbackModalClosedTimestamp");
 
     if (userFeedbackModalClosedTimestamp) {
-        const threeDaysInMilliseconds = 3 * 24 * 60 * 60 * 1000;
+        const halfMinuteInMilliseconds = 30 * 1000;
         const currentDate = new Date();
 
-        const threeDaysAgo = currentDate.getTime() - threeDaysInMilliseconds;
+        const whileAgo = currentDate.getTime() - halfMinuteInMilliseconds;
 
-        if (userFeedbackModalClosedTimestamp >= threeDaysAgo) {
+        if (userFeedbackModalClosedTimestamp >= whileAgo) {
             return;
         }
     }
