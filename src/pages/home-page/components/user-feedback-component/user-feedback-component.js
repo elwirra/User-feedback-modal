@@ -1,6 +1,7 @@
 export const UserFeedbackComponent = () => {
     let currentRating = null;
     let feedbackInputIsEmpty = 1;
+
     const userFeedbackComponent = document.querySelector('.user-feedback-component');
     const allRatesTiles = userFeedbackComponent.querySelectorAll('.user-feedback-component__single-rate-tile');
     const confirmButton = userFeedbackComponent.querySelector('.user-feedback-component__confirm-button');
@@ -8,6 +9,10 @@ export const UserFeedbackComponent = () => {
     const feedbackInput = feedbackContainer.querySelector('.user-feedback-component__input');
 
     addListenersToAllRatesTiles();
+
+    confirmButton.addEventListener('click', () => {
+        confirmButton.setAttribute('data-loading', '1')
+    })
 
     function addListenersToAllRatesTiles() {
         allRatesTiles.forEach((singleRateTile) => {
@@ -79,8 +84,6 @@ export const UserFeedbackComponent = () => {
     function checkIfInputIsEmpty() {
         feedbackInputIsEmpty = !feedbackInput.value.trim().length;
     }
-
-    
 
     function disselectOtherRatings(clickedTile) {
         allRatesTiles.forEach((singleRateTile) => {

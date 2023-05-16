@@ -1,6 +1,6 @@
 .user-feedback-modal {
     .swal2-html-container {
-        margin: 0;
+        margin: 0 7px;
     }
 
     .swal2-popup {
@@ -13,7 +13,7 @@
         width: var(--close-button-size);
         height: var(--close-button-size);
     
-        margin-top: 28px;
-        margin-right: 28px;
+        margin-top: 20px;
+        margin-right: 19px;
     }
 }

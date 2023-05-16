@@ -1,9 +1,9 @@
 .user-feedback-component {
     background: var(--background-color);
     border-radius: 18px;
-    padding: 16px;
+    padding: 16px 8px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 
     &-wrapper {
         display: flex;
@@ -11,11 +11,19 @@
         align-items: center;
     }
 
+    & &__icon-container {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     & &__title {
         font-size: 18px;
         font-weight: 700;
         line-height: 1.1em;
         margin: 10px 40% 24px 0;
+        letter-spacing: 0.005em;
     }
 
     & &__rating-container {
@@ -33,7 +41,7 @@
         font-size: 18px;
         line-height: 1em;
         font-weight: 500;
-        padding: 15px 22px;
+        padding: 14px 22px 15px;
         border-radius: 12px;
         border: 1px solid var(--border-color-dark);
 
