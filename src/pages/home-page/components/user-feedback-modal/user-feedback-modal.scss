@@ -17,3 +17,13 @@
         margin-right: 19px;
     }
 }
+
+@media screen and (min-width: 834px) { 
+    .user-feedback-modal {
+        .swal2-close {
+            --close-button-size: 20px;
+            margin-top: 24px;
+            margin-right: 24px;
+        }
+    }
+}

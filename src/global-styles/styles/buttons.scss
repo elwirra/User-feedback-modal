@@ -64,3 +64,10 @@ button {
 
 }
 
+@media screen and (min-width: 834px) { 
+    button {
+        height: 56px;
+        letter-spacing: 0;
+    }
+}
+

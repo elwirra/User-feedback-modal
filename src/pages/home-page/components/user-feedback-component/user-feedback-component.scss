@@ -44,6 +44,7 @@
         padding: 14px 22px 15px;
         border-radius: 12px;
         border: 1px solid var(--border-color-dark);
+        cursor: pointer;
 
         &:hover {
             border: 1px solid var(--border-color);
@@ -74,13 +75,21 @@
 
     & &__input-container {
         margin-top: 32px;
+        transition: 0.2s;
 
         &[data-feedback="0"] {
-            display: none;
+            height: 100%;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            margin-top: 0;
         }
 
         &[data-feedback="1"] {
-            display: block;
+            max-height: 90px;
+            overflow: visible;
+            opacity: 1;
+            margin-top: 32px;
         }
     }
 
@@ -96,5 +105,47 @@
         display: block;
         width: 100%;
         color: #fff;
+    }
+}
+
+@media screen and (min-width: 834px) {
+    .user-feedback-component {
+        padding: 31px 24px;
+        margin-bottom: 0;
+
+        &-wrapper {
+            justify-content: start;
+        }
+
+        & &__icon-container {
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        } 
+
+        & &__title {
+            font-size: 24px;
+            line-height: 1em;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+        & &__single-rate-tile {
+            font-size: 24px;
+            padding: 19px 32px;
+        }
+
+        & &__single-label {
+            font-size: 16px;
+        }
+
+        & &__rates-container {
+            margin-bottom: 17px;
+        }
+
+        & &__rating-container {
+            margin-bottom: 33px;
+        }
     }
 }
