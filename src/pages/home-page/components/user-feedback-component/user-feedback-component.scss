@@ -108,6 +108,18 @@
     }
 }
 
+@media screen and (max-width: 345px) {
+    .user-feedback-component {
+        & &__title {
+            margin-right: 10%;
+        }
+
+        & &__single-rate-tile {
+            padding: 12px 18px;
+        }
+    }
+ }
+
 @media screen and (min-width: 834px) {
     .user-feedback-component {
         padding: 31px 24px;

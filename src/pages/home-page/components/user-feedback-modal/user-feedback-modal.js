@@ -9,9 +9,9 @@ export const UserFeedbackModal = () => {
 
         const threeDaysAgo = currentDate.getTime() - threeDaysInMilliseconds;
 
-        // if (userFeedbackModalClosedTimestamp >= threeDaysAgo) {
-        //     return;
-        // }
+        if (userFeedbackModalClosedTimestamp >= threeDaysAgo) {
+            return;
+        }
     }
 
     Swal.fire({
@@ -27,8 +27,8 @@ export const UserFeedbackModal = () => {
         showCloseButton: true,
         allowEnterKey: false,
         closeButtonHtml: '<img src="/assets/icons/close-icon.svg" alt="X" />',
-        // didClose: () => {
-        //     localStorage.setItem("userFeedbackModalClosedTimestamp", Date.now());
-        // },
+        didClose: () => {
+            localStorage.setItem("userFeedbackModalClosedTimestamp", Date.now());
+        },
     });
 };
