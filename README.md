@@ -1,16 +1,8 @@
-# INVO Academy JS Starter with Vite
+# User feedback modal with SweetAlert2
 
-In order to see this file in preview mode in VS Code, press ```Ctrl + Shift + V```
+User feedback modal based on SweetAlert2 plugin. It has rating and feedback option for rates 1-3. 
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/)
-
-## How to start your challenge
-
-This is a Universal Starter for all the Basic INVO Academy Challenges. In order to start your challenge, remove all the content inside ```<div id="home-page"></div>``` and start coding :) 
-
-The main file structure is prepered, please make yourslef familiar with it. Your goal is to explore it and extend on your own while development. Feel free to remove all the extra files and code that you don't need.
+![2023-05-17 10_33_52-INVO Academy JS Starter with Vite](https://github.com/elwirra/INVO-Spotify-5/assets/2406738/99ac49fa-a93a-431a-94d0-662798716801)
 
 ## How to run your project
 
@@ -22,16 +14,12 @@ In order to run your project in a development mode type
 
 ```npm run dev```
 
-then open your browser and go to the url showed in the terminal. That's it, if you make any changes in the code, browser will synchronize automatically.
-
 ## Building your project
 
 When you are ready to put your project on the Internet, you need to build it. For building, type
 
 ```npm run build```
 
-This commend will create a dist folder. This is the folder containing your whole application and that's the only folder that you need to deploy to the server in order to make your app publically available.
 
-## More informations about folder structure and deploying your application you can find inside INVO Academy Knowledge Base
 
 
