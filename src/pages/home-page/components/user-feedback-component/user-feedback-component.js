@@ -1,3 +1,7 @@
+import iconFeedback from '/assets/icons/user-feedback-icon.svg';
+import iconLoader from '/assets/icons/animated-loader.svg';
+import iconClose from '/assets/icons/close-icon.svg';
+
 export const UserFeedbackComponent = () => {
     let currentRating = null;
     let feedbackInputIsEmpty = 1;
@@ -7,6 +11,10 @@ export const UserFeedbackComponent = () => {
     const confirmButton = userFeedbackComponent.querySelector('.user-feedback-component__confirm-button');
     const feedbackContainer = userFeedbackComponent.querySelector('.user-feedback-component__input-container');
     const feedbackInput = feedbackContainer.querySelector('.user-feedback-component__input');
+
+    userFeedbackComponent.querySelector('[data-icon="icon-feedback"]').src = iconFeedback;
+    userFeedbackComponent.querySelector('[data-icon="icon-loader"]').src = iconLoader;
+    document.querySelector('.swal2-close').src = iconClose;
 
     addListenersToAllRatesTiles();
 
