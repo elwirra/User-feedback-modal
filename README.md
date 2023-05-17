@@ -1,8 +1,8 @@
 # User feedback modal with SweetAlert2
 
-User feedback modal based on SweetAlert2 plugin. It has rating and feedback option for rates 1-3. 
+User feedback modal based on SweetAlert2 plugin. It has rating and feedback option for rates 1-3.
 
-![User feedback modal](https://github.com/elwirra/INVO-Spotify-5/assets/2406738/99ac49fa-a93a-431a-94d0-662798716801 | width=400)
+<img src="https://github.com/elwirra/INVO-Spotify-5/assets/2406738/99ac49fa-a93a-431a-94d0-662798716801" alt="User feedback modal" width="400" />
 
 ## How to run your project
 
