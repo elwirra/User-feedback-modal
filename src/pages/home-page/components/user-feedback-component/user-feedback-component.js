@@ -12,9 +12,10 @@ export const UserFeedbackComponent = () => {
     const feedbackContainer = userFeedbackComponent.querySelector('.user-feedback-component__input-container');
     const feedbackInput = feedbackContainer.querySelector('.user-feedback-component__input');
 
+    // hack for webpack to build static assets since html reference is inside <template> tag
     userFeedbackComponent.querySelector('[data-icon="icon-feedback"]').src = iconFeedback;
     userFeedbackComponent.querySelector('[data-icon="icon-loader"]').src = iconLoader;
-    document.querySelector('.swal2-close').src = iconClose;
+    document.querySelector('[data-icon="icon-close"]').src = iconClose;
 
     addListenersToAllRatesTiles();
 
